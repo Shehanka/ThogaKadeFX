@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ThogaKadeClient/ThogaKadeClient.iml" filepath="$PROJECT_DIR$/ThogaKadeClient/ThogaKadeClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThogaKadeCommon/ThogaKadeCommon.iml" filepath="$PROJECT_DIR$/ThogaKadeCommon/ThogaKadeCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThogaKadeServer/ThogaKadeServer.iml" filepath="$PROJECT_DIR$/ThogaKadeServer/ThogaKadeServer.iml" />
+    </modules>
+  </component>
+</project>
