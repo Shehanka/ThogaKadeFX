@@ -1,10 +1,12 @@
 package model;
 
+import java.io.Serializable;
+
 /**
  * @author chamodshehanka on 11/10/2017
  * @project ThogaKadeFX
  **/
-public class Customer {
+public class Customer implements Serializable{
     private String id;
     private String name;
     private String address;

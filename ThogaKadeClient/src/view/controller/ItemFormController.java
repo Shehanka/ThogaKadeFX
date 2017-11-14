@@ -145,19 +145,6 @@ public class ItemFormController implements Initializable{
         colUnitPrice.setCellValueFactory(new PropertyValueFactory<>("unitPrice"));
         colQtyOnHand.setCellValueFactory(new PropertyValueFactory<>("qtyOnHand"));
 
-        ItemTableModel itemTableModel = new ItemTableModel();
-        itemTableModel.setCode("I001");
-        itemTableModel.setDescription("Milo");
-        itemTableModel.setUnitPrice(50);
-        itemTableModel.setQtyOnHand(1000);
-
-        itemTableModelObservableList.add(itemTableModel);
-        itemTableModelObservableList.add(itemTableModel);
-        itemTableModelObservableList.add(itemTableModel);
-        itemTableModelObservableList.add(itemTableModel);
-        itemTableModelObservableList.add(itemTableModel);
-        itemTableModelObservableList.add(itemTableModel);
-
         tblItem.setItems(itemTableModelObservableList);
 
         ArrayList<Item> itemArrayList;

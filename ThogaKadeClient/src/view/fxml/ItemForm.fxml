@@ -62,10 +62,10 @@
       <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
       <TableView fx:id="tblItem" layoutX="84.0" layoutY="198.0" prefHeight="277.0" prefWidth="533.0">
         <columns>
-          <TableColumn fx:id="colCode" prefWidth="91.0" text="Code" />
-          <TableColumn fx:id="colDescription" prefWidth="210.0" text="Description" />
-            <TableColumn fx:id="colUnitPrice" prefWidth="129.0" text="Unit Price" />
-            <TableColumn fx:id="colQtyOnHand" prefWidth="99.0" text="Qty on hand" />
+          <TableColumn fx:id="colCode" prefWidth="68.0" text="Code" />
+          <TableColumn fx:id="colDescription" prefWidth="214.0" text="Description" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="112.0" text="Unit Price" />
+            <TableColumn fx:id="colQtyOnHand" prefWidth="102.0" text="Qty on hand" />
         </columns>
       </TableView>
    </children>
