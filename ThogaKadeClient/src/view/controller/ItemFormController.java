@@ -8,6 +8,7 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
@@ -76,9 +77,17 @@ public class ItemFormController implements Initializable{
             ItemController itemController = ServerConnector.getServerConnector().getItemController();
             boolean isAdded = itemController.addItem(item);
             if (isAdded){
-                System.out.println("Item has been successfully added");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a information Dialog");
+                alert.setContentText("Item has been successfully added");
+                alert.showAndWait();
             }else {
-                System.out.println("Item couldn't add");
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a Warning Dialog");
+                alert.setContentText("Item couldn't add");
+                alert.showAndWait();
             }
         } catch (NotBoundException | MalformedURLException | RemoteException | SQLException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -95,7 +104,11 @@ public class ItemFormController implements Initializable{
                 txtUnitPrice.setText(String.valueOf(item.getUnitPrice()));
                 txtQtyOnHand.setText(String.valueOf(item.getQtyOnHand()));
             }else {
-                System.out.println("Item couldn't find");
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a Warning Dialog");
+                alert.setContentText("Couldn't find item");
+                alert.showAndWait();
             }
         } catch (NotBoundException | MalformedURLException | RemoteException | SQLException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -115,9 +128,17 @@ public class ItemFormController implements Initializable{
             ItemController itemController = ServerConnector.getServerConnector().getItemController();
             boolean isUpdated = itemController.updateItem(item);
             if (isUpdated){
-                System.out.println("Item has been successfully updated");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a information Dialog");
+                alert.setContentText("Item has been successfully updated");
+                alert.showAndWait();
             }else {
-                System.out.println("Item couldn't update");
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a Warning Dialog");
+                alert.setContentText("Item couldn't update");
+                alert.showAndWait();
             }
         } catch (NotBoundException | MalformedURLException | RemoteException | SQLException | ClassNotFoundException e) {
             e.printStackTrace();
@@ -130,9 +151,17 @@ public class ItemFormController implements Initializable{
             ItemController itemController = ServerConnector.getServerConnector().getItemController();
             boolean isDeleted = itemController.deleteItem(txtItemCode.getText());
             if (isDeleted){
-                System.out.println("Item has been successfully deleted");
+                Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a information Dialog");
+                alert.setContentText("Item has been successfully deleted");
+                alert.showAndWait();
             }else {
-                System.out.println("Item couldn't delete");
+                Alert alert = new Alert(Alert.AlertType.WARNING);
+                alert.setTitle("Items");
+                alert.setHeaderText("Look, a Warning Dialog");
+                alert.setContentText("Item couldn't delete");
+                alert.showAndWait();
             }
         } catch (NotBoundException | MalformedURLException | RemoteException | SQLException | ClassNotFoundException e) {
             e.printStackTrace();

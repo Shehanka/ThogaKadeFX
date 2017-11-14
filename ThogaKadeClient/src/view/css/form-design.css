@@ -16,6 +16,10 @@
     -fx-padding: 5;
 }
 
+.table-view *{
+    -fx-text-fill: #2c3e50;
+}
+
 .table-view .column-header-background {
     -fx-background-color: transparent;
 }
@@ -40,6 +44,10 @@
     -fx-opacity: 1;
 }
 
+.table-row-cell .column-header .label{
+    -fx-background-insets: 3px;
+    -fx-text-fill: white;
+}
 .table-view .table-row-cell{
     -fx-text-fill: white;
 }
