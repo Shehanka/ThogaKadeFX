@@ -1,10 +1,12 @@
 package model;
 
+import java.io.Serializable;
+
 /**
  * @author chamodshehanka on 11/11/2017
  * @project ThogaKadeFX
  **/
-public class Item {
+public class Item implements Serializable{
     private String code;
     private String description;
     private Double unitPrice;
