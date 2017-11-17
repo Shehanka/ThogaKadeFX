@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="rootMainMenu" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #9a12b3;" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.thogaKadeClient.view.controller.MainMenuFormController">
+   <children>
+      <JFXButton layoutX="217.0" layoutY="196.0" onAction="#showCustomerForm" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: #fff;" text="Manage Customers" />
+      <JFXButton layoutX="365.0" layoutY="196.0" onAction="#showItemForm" prefHeight="43.0" prefWidth="119.0" style="-fx-background-color: #fff;" text="Manage Items" />
+   </children>
+</AnchorPane>

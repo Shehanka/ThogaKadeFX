@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ecf0f1;" stylesheets="@../css/form-design.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chamodshehanka.thogaKadeClient.view.controller.CustomerFormController">
+   <children>
+      <JFXTextField fx:id="txtCustomerID" focusColor="#8e44ad" labelFloat="true" layoutX="96.0" layoutY="88.0" prefHeight="25.0" prefWidth="80.0" promptText="Customer ID" unFocusColor="#8e44ad" />
+      <JFXTextField fx:id="txtCustomerName" focusColor="#8e44ad" labelFloat="true" layoutX="204.0" layoutY="88.0" promptText="Customer Name" unFocusColor="#8e44ad" />
+      <JFXTextField fx:id="txtCustomerAddress" focusColor="#8e44ad" labelFloat="true" layoutX="364.0" layoutY="88.0" prefHeight="25.0" prefWidth="112.0" promptText="Customer Address" unFocusColor="#8e44ad" />
+      <JFXTextField fx:id="txtCustomerSalary" focusColor="#8e44ad" labelFloat="true" layoutX="502.0" layoutY="88.0" prefHeight="25.0" prefWidth="103.0" promptText="Customer Salary" unFocusColor="#8e44ad" />
+      <ButtonBar layoutX="239.0" layoutY="132.0" prefHeight="40.0" prefWidth="200.0">
+         <buttons>
+            <ButtonBar prefHeight="40.0" prefWidth="359.0">
+              <buttons>
+                  <JFXButton fx:id="btnAdd" buttonType="RAISED" onAction="#addCustomer" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #8e44ad;" text="Add" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnSearch" buttonType="RAISED" onAction="#searchCustomer" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #8e44ad;" text="Search" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnUpdate" buttonType="RAISED" onAction="#updateCustomer" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #8e44ad;" text="Update" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="btnDelete" buttonType="RAISED" onAction="#deleteCustomer" prefHeight="30.0" prefWidth="92.0" style="-fx-background-color: #e74c3c;" text="Delete" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </JFXButton>
+              </buttons>
+            </ButtonBar>
+         </buttons>
+      </ButtonBar>
+      <TableView fx:id="tblCustomer" layoutX="46.0" layoutY="183.0" prefHeight="263.0" prefWidth="609.0">
+        <columns>
+          <TableColumn fx:id="colCustomerID" prefWidth="75.0" text="Customer ID" />
+          <TableColumn fx:id="colCustomerName" prefWidth="153.0" text="Customer Name" />
+            <TableColumn fx:id="colAddress" prefWidth="270.0" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="104.0" text="Salary" />
+        </columns>
+      </TableView>
+      <Text fill="#8e44ad" layoutX="270.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Customer">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
