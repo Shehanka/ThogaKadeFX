@@ -35,7 +35,7 @@ public class ItemControllerImpl extends UnicastRemoteObject implements ItemContr
 
     @Override
     public boolean updateItem(Item item) throws ClassNotFoundException, SQLException, RemoteException {
-        return itemDBAccess.updateItem(item);
+        return ITEM_RESERVATION.reserveItem(item.getCode(), this) && itemDBAccess.updateItem(item);
     }
 
     @Override
